@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leadership Quiz</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Create container to store app content.  -->
+    <div class="container">
+        <div class="jumbotron">
+            <!-- game tittle -->
+            <h1 id="gameTitle">Leadership Assestment</h1>
+
+            <br>
+            <br>
+
+
+            <!-- start button triggers game -->
+            <div class>
+                <button class="btn btn-primary" id="startButton">START</button>
+            </div>
+            <br>
+            <!-- wrapping all questions together -->
+            <div id="Wrapper">
+                <br>
+                <div class="questions">
+                    <p>I think that teams perform best when individuals keep doing the same tasks and perfecting them, instead of learning new skills and challenging themselves.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q1" value="a">
+                        <label for="q1a">Not at All</label>
+                        <input class="2" type="radio" name="q1" value="b">
+                        <label for="q1b">Rarely</label>
+                        <input class="3" type="radio" name="q1" value="c">
+                        <label for="q1c">Sometimes</label>
+                        <input class="4" type="radio" name="q1" value="d">
+                        <label for="q1d">Often</label>
+                        <input class="5" type="radio" name="q1" value="d">
+                        <label for="q1d">Very Often</label>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <p>I'm optimistic about life, and I can see beyond temporary setbacks and problems.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q2" value="a">
+                        <label for="q2a">Not at All</label>
+                        <input class="2" type="radio" name="q2" value="b">
+                        <label for="q2b">Rarely</label>
+                        <input class="3" type="radio" name="q2" value="c">
+                        <label for="q2c">Sometimes</label>
+                        <input class="4" type="radio" name="q2" value="d">
+                        <label for="q2d">Often</label>
+                        <input class="5" type="radio" name="q2" value="d">
+                        <label for="q2d">Very Often</label>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <p>I make time to learn what people need from me, so that they can be successful.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q3" value="a">
+                        <label for="q3a">Not at All</label>
+                        <input class="2" type="radio" name="q3" value="b">
+                        <label for="q3b">Rarely</label>
+                        <input class="3" type="radio" name="q3" value="c">
+                        <label for="q3c">Sometimes</label>
+                        <input class="4" type="radio" name="q3" value="d">
+                        <label for="q3d">Often</label>
+                        <input class="5" type="radio" name="q3" value="d">
+                        <label for="q3d">Very Often</label>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <p>I feel threatened when someone criticizes me.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q4" value="a">
+                        <label for="q4a">Not at All</label>
+                        <input class="2" type="radio" name="q4" value="b">
+                        <label for="q4b">Rarely</label>
+                        <input class="3" type="radio" name="q4" value="c">
+                        <label for="q4c">Sometimes</label>
+                        <input class="4" type="radio" name="q4" value="d">
+                        <label for="q4d">Often</label>
+                        <input class="5" type="radio" name="q4" value="d">
+                        <label for="q4d">Very Often</label>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <p>I enjoy planning for the future.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q5" value="a">
+                        <label for="q5a">Not at All</label>
+                        <input class="2" type="radio" name="q5" value="b">
+                        <label for="q5b">Rarely</label>
+                        <input class="3" type="radio" name="q5" value="c">
+                        <label for="q5c">Sometimes</label>
+                        <input class="4" type="radio" name="q5" value="d">
+                        <label for="q5d">Often</label>
+                        <input class="5" type="radio" name="q5" value="d">
+                        <label for="q5d">Very Often</label>
+                    </ul>
+                </div>
+			<div class="questions">
+                    <p>I make exceptions to my rules and expectations. It's easier than being the enforcer all the time!</p>
+                    <ul>
+                        <input class="1" type="radio" name="q6" value="a">
+                        <label for="q6a">Not at All</label>
+                        <input class="2" type="radio" name="q6" value="b">
+                        <label for="q6b">Rarely</label>
+                        <input class="3" type="radio" name="q6" value="c">
+                        <label for="q6c">Sometimes</label>
+                        <input class="4" type="radio" name="q6" value="d">
+                        <label for="q6d">Often</label>
+                        <input class="5" type="radio" name="q6" value="d">
+                        <label for="q6d">Very Often</label>
+                    </ul>
+                </div>
+
+	  <div class="questions">
+                    <p>When working with a team, I encourage everyone to work toward the same overall objectives.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q7" value="a">
+                        <label for="q7a">Not at All</label>
+                        <input class="2" type="radio" name="q7" value="b">
+                        <label for="q7b">Rarely</label>
+                        <input class="3" type="radio" name="q7" value="c">
+                        <label for="q7c">Sometimes</label>
+                        <input class="4" type="radio" name="q7" value="d">
+                        <label for="q7d">Often</label>
+                        <input class="5" type="radio" name="q7" value="d">
+                        <label for="q7d">Very Often</label>
+                    </ul>
+                </div>
+	 
+	 
+	  <div class="questions">
+                    <p>My actions show people what I want from them.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q8" value="a">
+                        <label for="q8a">Not at All</label>
+                        <input class="2" type="radio" name="q8" value="b">
+                        <label for="q8b">Rarely</label>
+                        <input class="3" type="radio" name="q8" value="c">
+                        <label for="q8c">Sometimes</label>
+                        <input class="4" type="radio" name="q8" value="d">
+                        <label for="q8d">Often</label>
+                        <input class="5" type="radio" name="q8" value="d">
+                        <label for="q8e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I get upset and worried quite often in the workplace.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q9" value="a">
+                        <label for="q9a">Not at All</label>
+                        <input class="2" type="radio" name="q9" value="b">
+                        <label for="q9b">Rarely</label>
+                        <input class="3" type="radio" name="q9" value="c">
+                        <label for="q9c">Sometimes</label>
+                        <input class="4" type="radio" name="q9" value="d">
+                        <label for="q9d">Often</label>
+                        <input class="5" type="radio" name="q9" value="d">
+                        <label for="q9e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>Time spent worrying about team morale is time that's wasted.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q10" value="a">
+                        <label for="q10a">Not at All</label>
+                        <input class="2" type="radio" name="q10" value="b">
+                        <label for="q10b">Rarely</label>
+                        <input class="3" type="radio" name="q10" value="c">
+                        <label for="q10c">Sometimes</label>
+                        <input class="4" type="radio" name="q10" value="d">
+                        <label for="q10d">Often</label>
+                        <input class="5" type="radio" name="q10" value="d">
+                        <label for="q10e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I am highly motivated because I know I have what it takes to be successful.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q11" value="a">
+                        <label for="q11a">Not at All</label>
+                        <input class="2" type="radio" name="q11" value="b">
+                        <label for="q11b">Rarely</label>
+                        <input class="3" type="radio" name="q11" value="c">
+                        <label for="q11c">Sometimes</label>
+                        <input class="4" type="radio" name="q11" value="d">
+                        <label for="q11d">Often</label>
+                        <input class="5" type="radio" name="q11" value="d">
+                        <label for="q11e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I think that personal feelings shouldn't be allowed to get in the way of performance and productivity.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q12" value="a">
+                        <label for="q12a">Not at All</label>
+                        <input class="2" type="radio" name="q12" value="b">
+                        <label for="q12b">Rarely</label>
+                        <input class="3" type="radio" name="q12" value="c">
+                        <label for="q12c">Sometimes</label>
+                        <input class="4" type="radio" name="q12" value="d">
+                        <label for="q12d">Often</label>
+                        <input class="5" type="radio" name="q12" value="d">
+                        <label for="q12e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>When circumstances change, I can struggle to know what to do.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q13" value="a">
+                        <label for="q13a">Not at All</label>
+                        <input class="2" type="radio" name="q13" value="b">
+                        <label for="q13b">Rarely</label>
+                        <input class="3" type="radio" name="q13" value="c">
+                        <label for="q13c">Sometimes</label>
+                        <input class="4" type="radio" name="q13" value="d">
+                        <label for="q13d">Often</label>
+                        <input class="5" type="radio" name="q13" value="d">
+                        <label for="q13e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>When someone is upset, I try to understand how he or she is feeling.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q14" value="a">
+                        <label for="q14a">Not at All</label>
+                        <input class="2" type="radio" name="q14" value="b">
+                        <label for="q14b">Rarely</label>
+                        <input class="3" type="radio" name="q14" value="c">
+                        <label for="q14c">Sometimes</label>
+                        <input class="4" type="radio" name="q14" value="d">
+                        <label for="q14d">Often</label>
+                        <input class="5" type="radio" name="q14" value="d">
+                        <label for="q14e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I expect my people to work harder than I do.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q15" value="a">
+                        <label for="q15a">Not at All</label>
+                        <input class="2" type="radio" name="q15" value="b">
+                        <label for="q15b">Rarely</label>
+                        <input class="3" type="radio" name="q15" value="c">
+                        <label for="q15c">Sometimes</label>
+                        <input class="4" type="radio" name="q15" value="d">
+                        <label for="q15d">Often</label>
+                        <input class="5" type="radio" name="q15" value="d">
+                        <label for="q15e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I expect nothing less than top-notch results from people.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q16" value="a">
+                        <label for="q16a">Not at All</label>
+                        <input class="2" type="radio" name="q16" value="b">
+                        <label for="q16b">Rarely</label>
+                        <input class="3" type="radio" name="q16" value="c">
+                        <label for="q16c">Sometimes</label>
+                        <input class="4" type="radio" name="q16" value="d">
+                        <label for="q16d">Often</label>
+                        <input class="5" type="radio" name="q16" value="d">
+                        <label for="q16e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>I doubt myself and my ability to succeed.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q17" value="a">
+                        <label for="q17a">Not at All</label>
+                        <input class="2" type="radio" name="q17" value="b">
+                        <label for="q17b">Rarely</label>
+                        <input class="3" type="radio" name="q17" value="c">
+                        <label for="q17c">Sometimes</label>
+                        <input class="4" type="radio" name="q17" value="d">
+                        <label for="q17d">Often</label>
+                        <input class="5" type="radio" name="q17" value="d">
+                        <label for="q17e">Very Often</label>
+                    </ul>
+                </div>
+	 
+	  <div class="questions">
+                    <p>When assigning tasks, I consider people's skills and interests.</p>
+                    <ul>
+                        <input class="1" type="radio" name="q18" value="a">
+                        <label for="q18a">Not at All</label>
+                        <input class="2" type="radio" name="q18" value="b">
+                        <label for="q18b">Rarely</label>
+                        <input class="3" type="radio" name="q18" value="c">
+                        <label for="q18c">Sometimes</label>
+                        <input class="4" type="radio" name="q18" value="d">
+                        <label for="q18d">Often</label>
+                        <input class="5" type="radio" name="q18" value="d">
+                        <label for="q18e">Very Often</label>
+                    </ul>
+                </div>
+                <br>
+                
+                <!-- submit button -->
+               
+                <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+
+                <br><br>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+<!-- link javascript -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+body {
+    background: url(../images/vintage-pattern-backgrounds-1.jpg);
+    
+  
+}
+
+#gameTitle {
+    font-family: cursive;
+}
+
+.container{
+    width:60%;
+    margin:10% auto;
+    text-align: center;
+  
+
+}
+.jumbotron {
+    color: black;
+    background: #c5cabe;;
+}
+#startButton {
+    width:250px;
+    height: 100px;
+    font-size: 32px;
+    color: white;
+    background-color: black;
+}
+
+#Wrapper {
+    border-style: solid;
+    border-color: black;
+  
+}
+
+#submit {
+    color: white;
+    background-color: black;
+}
