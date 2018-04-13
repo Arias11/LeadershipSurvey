@@ -62,9 +62,9 @@ $(document).ready(function () {
             "<h2>YOUR SCORE<h2>" +
             "<p>Your Total is: " + correctAnswers + "</p>" +
             "<h3>Score Interpretation:<h3>" +
-            "<p>1-10 = You are a failure.</p>" +
-            "<p>11-20 = You're okay.</p>" +
-            "<p>21-30 = You're the best.</p>";
+            "<p>18-36 = Needs Major Improvement.</p>" +
+            "<p>37-52 = Average Leadership Skills.</p>" +
+            "<p>53-90 = Excellent Leader!</p>";
 
            
             
